@@ -16,6 +16,7 @@ int main() {
     return 0;
 }
 
+_____________________________________________________________________________________
 //print linearly from 1 to N
 
 #include<bits/stdc++.h>
@@ -33,7 +34,7 @@ int main() {
     hal(1,n);
     return 0;
 }
-
+_____________________________________________________________________________________
 //print from N to 1
 
 #include<bits/stdc++.h>
@@ -52,6 +53,7 @@ int main() {
     return 0;
 }
 
+_____________________________________________________________________________________
 //print from 1 to N but by not using i+1 (backtracking)
 
 #include<bits/stdc++.h>
@@ -70,7 +72,7 @@ int main() {
     returns 0;
 }
 
-
+_____________________________________________________________________________________
 //summation of numbers using recursion using parameters: 
 
 #include <bits/stdc++.h>
@@ -94,6 +96,7 @@ int main() {
 
 }
 
+_____________________________________________________________________________________
 //summation of N numbers using functional method:
 
 #include <bits/stdc++.h>
@@ -112,6 +115,7 @@ int main() {
 
 }
 
+_____________________________________________________________________________________
 //recursion method for finding factorial using functional method:
 
 #include <bits/stdc++.h>
@@ -131,6 +135,7 @@ int main() {
 
 }
 
+_____________________________________________________________________________________
 //reverse an ARRAY: 
 
 #include <bits/stdc++.h>
@@ -154,6 +159,7 @@ int main() {
     return 0;
 }
 
+_____________________________________________________________________________________
 //check if a string is a palindrome: 
 
 #include <bits/stdc++.h>
@@ -171,6 +177,7 @@ int main() {
     return 0;
 }
 
+_____________________________________________________________________________________
 //fibonicc number: 
 
 #include <bits/stdc++.h>
