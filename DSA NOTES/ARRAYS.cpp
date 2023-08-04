@@ -96,3 +96,52 @@ int main() {
     return 0;
 
 }
+
+----------------------------------------------------------------------------------------------
+
+//DELETION: 
+//Time Complexity is : O(n).
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int deletenumber(int arr[],int n,int x) {
+    int i;
+    for ( i =0;i<n;i++) {
+        if(arr[i]==x) {
+            break;
+        }
+    }
+    
+    if (i==n) {
+        return n;
+    }
+        
+    for(int j=i;j<n-1;j++){
+            arr[j] = arr[j+1];
+            
+    }
+    return n-1;
+    
+}
+
+int main() {
+    int n;
+    cout << "entr the size of array: ";
+    cin >> n;
+    int arr[n];
+    cout << "enter the elements of array: ";
+    for (int i=0;i<n;i++) {
+        cin >> arr[i];
+    }
+    int x;
+    cout << "enter the element you wanna delete: ";
+    cin >> x;
+    int result = deletenumber(arr,n,x);
+    for (int i =0;i<result;i++) {
+        cout << arr[i];
+    }
+    cout << endl<< "the size of your new array: " << result ;
+    
+}
