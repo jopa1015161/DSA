@@ -245,6 +245,65 @@ int main()
     return 0;
 }
 
+//binary search recursive: 
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int binarysearch(int arr[],int x, int low,int high) {
+    if(low>high) return -1;
+    while (low<=high) {
+        int mid = (low+high)/2;
+        if(arr[mid]==x ) 
+            return mid;
+        else if(arr[mid]<x) {
+            return binarysearch(arr,mid+1,high,x);
+        }
+        else 
+            return binarysearch(arr,low,mid-1,x);
+    }
+}
+
+int shazam(int arr[],int x) {
+    if(arr[0]==x) return 0;
+    int i=1;
+    while (arr[i]<=x) {
+        i=i*2;
+        if(arr[i]==x) return i;
+        if(arr[i]>x) return -1;
+    }
+    return binarysearch(arr,x,i/2+1,i-1);
+}
+
+int main()
+{
+    int x;
+    cout << "enter the number you wanna check: ";
+    cin >> x;
+    int n;
+    cout << "enter the size of the array: ";
+    cin >> n;
+    int arr[n];
+    cout << "enter the elements of your array: ";
+    for (int i =0;i<n;i++) {
+        cin >> arr[i];
+    }
+    int mid;
+    
+    int low;
+    int high;
+    int result = shazam(arr,x);
+    
+    
+    if (result != -1) {
+        cout << "Element found at index: " << result << endl;
+    } else {
+        cout << "Element not found in the array." << endl;
+    }
+    return 0;
+}
 
 
 
